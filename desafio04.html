@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Páscoa</title>
+    <style>
+        .menu_top {
+            width: 100%;
+            height: 170px;
+            border-bottom: 10px solid #884e02;
+            border-top: 10px solid #884e02;
+            background-color: rgb(235, 194, 119);
+        }
+
+        .top_esp {
+            width: 200px;
+            float: left;
+            padding: 15px;
+        }
+
+        .top_dir {
+            float: left;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 100px;
+            color: #000000;
+            padding-left: 300px;
+            padding-top: 20px;
+        }
+
+        .menu_down {
+            background: #884e0256;
+            height: 50px;
+            text-align: center;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .menu {
+            background-color: rgb(105, 68, 0);
+            width: 100%;
+            height: 40px;
+        }
+
+        .menu ul {
+            padding: 0;
+            max-width: 500px;
+        }
+
+        .menu ul li {
+            background-color: rgb(105, 68, 0);
+            color: white;
+            float: left;
+            width: 100px;
+            height: 40px;
+            display: inline-block;
+            text-align: center;
+            line-height: 40px;
+            position: relative;
+        }
+
+        .menu ul li:hover {
+            background-color: rgb(95, 51, 0);
+        }
+
+        .menu ul ul {
+            display: none;
+        }
+
+        .menu ul li:hover>ul {
+            display: block;
+        }
+
+        .menu ul ul ul {
+            margin-left: 102px;
+            position: absolute;
+            top: 0px;
+        }
+
+        .menu ul ul li:hover {
+            background-color: rgb(95, 51, 0);
+        }
+
+        .menu ul ul ul li:hover {
+            background-color: rgb(120, 80, 0);
+        }
+
+        #banner {
+            width: 100%;
+            height: 728px;
+            position: relative;
+            background-image: url(img/Prancheta+3-640w.webp) no-repeat;
+            background-size 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu_top">
+            <div class="top_esp">
+                <figure>
+                    <img src="img/vetor-de-gradiente-de-logotipo-colorido-de-passaro_343694-1365.avif" alt="logo"
+                        height="140px">
+                </figure>
+            </div>
+            <div class="top_dir">
+                CHOCOLAND
+            </div>
+            <div class="clear"></div>
+            <div class="menu_down">
+                <nav class="menu">
+                    <ul>
+                        <li>HOME
+                            <ul>
+                                <li>Amazonas</li>
+                                <li>Pará</li>
+                                <li>Roraima
+                                    <ul>
+                                        <li>Capital</li>
+                                        <li>Interior</li>
+                                    </ul>
+                                </li>
+                                <li>Amapá</li>
+                                <li>Rondonia</li>
+                                <li>Tocantins</li>
+                            </ul>
+                        </li>
+                        <li>DOCES
+                            <ul>
+                                <li>BOMBONS</li>
+                                <li>BALAS</li>
+                                <li>TRUFAS
+                                    <ul>
+                                        <li>FRUTA</li>
+                                        <li>GELEIA</li>
+                                    </ul>
+                                </li>
+                                <li>OVINHOS</li>
+                                <li>CHOCOLATE</li>
+                                <li></li>
+                            </ul>
+                        </li>
+                        <li>OVOS
+                            <ul>
+                                <li>COMUNS</li>
+                                <li>RECHEADOS</li>
+                                <li>ESPECIAIS
+                                    <ul>
+                                        <li>COLORIDO</li>
+                                        <li>DESENHOS</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>BRINDES
+                            <ul>
+                                <li>CAMISAS</li>
+                                <li>CHAVEIROS</li>
+                                <li>PELÚCIAS
+                                    <ul>
+                                        <li>GRANDES</li>
+                                        <li>PEQUENAS</li>
+                                    </ul>
+                                </li>
+                                <li>MOLETONS</li>
+                            </ul>
+                        </li>
+                        <li>SOBRE
+                            <ul>
+                                <li>VALORES</li>
+                                <li>EQUIPE</li>
+                                <li>HISTÓIA
+                                    <ul>
+                                        <li>FUNDAÇÃO</li>
+                                        <li>FUNDADOR</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <img src="img/Prancheta+3-640w.webp">
+        </div>
+    </main>
+</body>
+
+</html>
