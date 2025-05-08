@@ -9,9 +9,11 @@
         .menu_top {
             width: 100%;
             height: 170px;
-            border-bottom: 10px solid #884e02;
-            border-top: 10px solid #884e02;
-            background-color: rgb(235, 194, 119);
+            border-bottom: 10px solid #783800;
+            border-top: 10px solid #783800;
+            background-color: rgb(157, 84, 0);
+            position: relative;
+            text-align: center;
         }
 
         .top_esp {
@@ -21,47 +23,42 @@
         }
 
         .top_dir {
-            float: left;
-            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 100px;
             color: #000000;
-            padding-left: 300px;
-            padding-top: 20px;
+            white-space: nowrap;
         }
-
         .menu_down {
-            background: #884e0256;
+            background: #783800;
             height: 50px;
             text-align: center;
-        }
-
-        .clear {
-            clear: both;
-        }
-
-        * {
-            margin: 0 auto;
-            padding: 0;
+            position: relative;
         }
 
         .menu {
-            background-color: rgb(105, 68, 0);
-            width: 100%;
-            height: 40px;
+            width: 85%;
+            height: 100%;
+            text-align: center;
         }
 
         .menu ul {
             padding: 0;
-            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            max-width: 1000px;
+            list-style: none;
         }
 
         .menu ul li {
-            background-color: rgb(105, 68, 0);
+            background-color: #783800;
             color: white;
-            float: left;
             width: 100px;
-            height: 40px;
+            height: 50px;
             display: inline-block;
             text-align: center;
             line-height: 40px;
@@ -74,6 +71,10 @@
 
         .menu ul ul {
             display: none;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            z-index: 1000;
         }
 
         .menu ul li:hover>ul {
@@ -81,25 +82,27 @@
         }
 
         .menu ul ul ul {
-            margin-left: 102px;
-            position: absolute;
-            top: 0px;
+            left: 100%;
+            top: 0;
         }
+
 
         .menu ul ul li:hover {
             background-color: rgb(95, 51, 0);
         }
 
         .menu ul ul ul li:hover {
-            background-color: rgb(120, 80, 0);
+            background-color: rgb(95, 51, 0);
         }
 
-        #banner {
+        .banner {
             width: 100%;
-            height: 728px;
+            height: 70vh;
             position: relative;
-            background-image: url(img/Prancheta+3-640w.webp) no-repeat;
-            background-size 100% 100%;
+            background-image: url(img/Prancheta+3-640w.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
     </style>
 </head>
@@ -109,93 +112,88 @@
         <div class="menu_top">
             <div class="top_esp">
                 <figure>
-                    <img src="img/vetor-de-gradiente-de-logotipo-colorido-de-passaro_343694-1365.avif" alt="logo"
-                        height="140px">
+                    <img src="img/vetor-de-gradiente-de-logotipo-colorido-de-passaro_343694-1365.avif" alt="logo" height="140px">
                 </figure>
             </div>
-            <div class="top_dir">
-                CHOCOLAND
-            </div>
+            <div class="top_dir">CHOCOLAND</div>
             <div class="clear"></div>
-            <div class="menu_down">
-                <nav class="menu">
-                    <ul>
-                        <li>HOME
-                            <ul>
-                                <li>Amazonas</li>
-                                <li>Pará</li>
-                                <li>Roraima
-                                    <ul>
-                                        <li>Capital</li>
-                                        <li>Interior</li>
-                                    </ul>
-                                </li>
-                                <li>Amapá</li>
-                                <li>Rondonia</li>
-                                <li>Tocantins</li>
-                            </ul>
-                        </li>
-                        <li>DOCES
-                            <ul>
-                                <li>BOMBONS</li>
-                                <li>BALAS</li>
-                                <li>TRUFAS
-                                    <ul>
-                                        <li>FRUTA</li>
-                                        <li>GELEIA</li>
-                                    </ul>
-                                </li>
-                                <li>OVINHOS</li>
-                                <li>CHOCOLATE</li>
-                                <li></li>
-                            </ul>
-                        </li>
-                        <li>OVOS
-                            <ul>
-                                <li>COMUNS</li>
-                                <li>RECHEADOS</li>
-                                <li>ESPECIAIS
-                                    <ul>
-                                        <li>COLORIDO</li>
-                                        <li>DESENHOS</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>BRINDES
-                            <ul>
-                                <li>CAMISAS</li>
-                                <li>CHAVEIROS</li>
-                                <li>PELÚCIAS
-                                    <ul>
-                                        <li>GRANDES</li>
-                                        <li>PEQUENAS</li>
-                                    </ul>
-                                </li>
-                                <li>MOLETONS</li>
-                            </ul>
-                        </li>
-                        <li>SOBRE
-                            <ul>
-                                <li>VALORES</li>
-                                <li>EQUIPE</li>
-                                <li>HISTÓIA
-                                    <ul>
-                                        <li>FUNDAÇÃO</li>
-                                        <li>FUNDADOR</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+        </div>
+        <div class="menu_down">
+            <nav class="menu">
+                <ul>
+                    <li>HOME
+                        <ul>
+                            <li>PRODUTOS</li>
+                            <li>POSTAGENS</li>
+                            <li>REDES
+                                <ul>
+                                    <li>INSTAGRAM</li>
+                                    <li>WHATSAPP</li>
+                                </ul>
+                            </li>
+                            <li>VAGAS</li>
+                            <li>IMAGENS</li>
+                        </ul>
+                    </li>
+                    <li>DOCES
+                        <ul>
+                            <li>BOMBONS</li>
+                            <li>BALAS</li>
+                            <li>TRUFAS
+                                <ul>
+                                    <li>FRUTA</li>
+                                    <li>GELEIA</li>
+                                </ul>
+                            </li>
+                            <li>OVINHOS</li>
+                            <li>CHOCOLATE</li>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li>OVOS
+                        <ul>
+                            <li>COMUNS</li>
+                            <li>RECHEADOS</li>
+                            <li>ESPECIAIS
+                                <ul>
+                                    <li>COLORIDO</li>
+                                    <li>DESENHOS</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>BRINDES
+                        <ul>
+                            <li>CAMISAS</li>
+                            <li>CHAVEIROS</li>
+                            <li>PELÚCIAS
+                                <ul>
+                                    <li>GRANDES</li>
+                                    <li>PEQUENAS</li>
+                                </ul>
+                            </li>
+                            <li>MOLETONS</li>
+                        </ul>
+                    </li>
+                    <li>SOBRE
+                        <ul>
+                            <li>VALORES</li>
+                            <li>EQUIPE</li>
+                            <li>HISTÓIA
+                                <ul>
+                                    <li>FUNDAÇÃO</li>
+                                    <li>FUNDADOR</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
-        <div class="banner">
-            <img src="img/Prancheta+3-640w.webp">
-        </div>
+        <div class="clear"></div>
+        <div class="banner"></div>
     </main>
 </body>
 
