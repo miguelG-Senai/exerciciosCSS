@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Reelbox - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reelbox - Pagamento</title>
     <style>
         body {
             margin: 0;
@@ -29,7 +30,7 @@
         header .logo .circle {
             width: 20px;
             height: 20px;
-            background: white;
+            background: #ffffff;
             border-radius: 50%;
             margin-right: 10px;
         }
@@ -46,6 +47,7 @@
         h1 {
             font-size: 36px;
             margin-bottom: 40px;
+            color: #00a0e0;
         }
 
         form {
@@ -55,24 +57,36 @@
 
         label {
             display: block;
-            color: #00a0e0;
             margin-bottom: 5px;
             font-size: 14px;
+            color: #00a0e0;
         }
 
-        input[type="email"],
-        input[type="password"] {
-            width: 300px;
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            max-width: 500px;
             padding: 10px;
             margin-bottom: 20px;
             border: none;
             background: #ccc;
             font-size: 16px;
+            color: black;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .row input {
+            flex: 1;
         }
 
         .button-row {
             display: flex;
-            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
         }
 
         button {
@@ -82,12 +96,12 @@
             cursor: pointer;
         }
 
-        .btn-login {
+        .btn-finalizar {
             background-color: #0077b6;
             color: white;
         }
 
-        .btn-register {
+        .btn-outros {
             background-color: #ccc;
             color: black;
         }
@@ -120,35 +134,38 @@
     <header>
         <div class="logo">
             <div class="circle"></div>
-            <span class="color">Reel</span><span>box</span>
+            <span style="color:white;">Reel</span><span>box</span>
         </div>
     </header>
 
     <main>
-        <h1>LOGIN</h1>
+        <h1>PAGAMENTO</h1>
         <form>
-            <label for="email">E-MAIL</label>
-            <input type="email" id="email" name="email" required placeholder="exemplo@hotmail.com">
+            <label for="cartao">NUMERO DO CARTÃO</label>
+            <input type="text" id="cartao" name="cartao" maxlength="19" placeholder="•••• •••• •••• ••••">
 
-            <label for="senha">SENHA</label>
-            <input type="password" id="senha" name="senha" required placeholder="Senha Necessária">
+            <div class="row">
+                <input type="text" name="validade" placeholder="MM/AA">
+                <input type="text" name="cvv" placeholder="CVV">
+            </div>
+
+            <input type="text" name="nome" placeholder="NOME IMPRESSO NO CARTÃO">
 
             <div class="button-row">
-                <button type="submit" class="btn-login">ENTRAR</button>
-                <button type="button" class="btn-register"
-                    onclick="window.location.href='pagamento.html'">CADASTRAR-SE</button>
+                <button type="submit" class="btn-finalizar">FINALIZAR</button>
+                <button type="button" class="btn-outros" onclick="window.location.href='login.html'">VOLTAR</button>
             </div>
         </form>
     </main>
 
     <footer>
         <div>
-            <h1>CONTATO</h1>
+            <h1 class="color">CONTATO</h1>
             <p>reelbox_conporation@gmail.com</p>
             <p>4002-8922</p>
         </div>
         <div>
-            <h1>SOBRE NÓS</h1>
+            <h1 class="color">SOBRE NÓS</h1>
             <p>sites apresentado cada um</p>
         </div>
     </footer>

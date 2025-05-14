@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reelbox - Blog</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #00a0e0;
+        }
+
+        header {
+            background-color: #062860;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header .logo .circle {
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        header .logo span:last-child {
+            color: #00a0e0;
+        }
+
+        main {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .title {
+            text-align: center;
+            color: #00aaff;
+            margin: 40px 0 20px;
+            font-size: 36px;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 0 40px 60px;
+        }
+
+        .card {
+            background-color: #2c2c2c;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card h2 {
+            color: #00aaff;
+            font-size: 18px;
+            padding: 10px 15px 0;
+        }
+
+        .card p {
+            padding: 0 15px 15px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        footer {
+            background-color: #0096c7;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 30px 20px;
+            font-size: 14px;
+        }
+
+        footer div {
+            max-width: 200px;
+        }
+
+        footer h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .color {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="circle"></div>
+            <span class="color">Reel</span><span>box</span>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="title">BLOG</h1>
+
+        <section class="cards-container">
+            <article class="card">
+                <img src="img/Minecraft.webp" alt="Cartaz do filme 1" />
+                <h2>MINECRAFT: O FILME</h2>
+                <p>Saiba como foram feitos os efeitos especiais de Minecraft: O Filme!</p>
+            </article>
+
+            <article class="card">
+                <img src="img/thunderbolts.jpg" alt="Cartaz do filme 2" />
+                <h2>THUNDERBOLTS*</h2>
+                <p>Descubra detalhes dos bastidores de gravação do novo filme da Marvel: Thunderbolts*!</p>
+            </article>
+
+            <article class="card">
+                <img src="img/quartetofantastico.webp" alt="Cartaz do filme 3" />
+                <h2>QUARTETO FANTÁSTICO</h2>
+                <p>Veja teorias em destaque sobre a história do filme mais aguardado da Marvel em 2025!</p>
+            </article>
+
+            <article class="card">
+                <img src="img/superman.webp" alt="Cartaz do filme 4" />
+                <h2>SUPERMAN LEGACY</h2>
+                <p>Ouça em primeira mão quais são as expectativas do ator David Corenswet sobre a futura estréia do filme Superman Legacy!</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h1>CONTATO</h1>
+            <p>reelbox_conporation@gmail.com</p>
+            <p>4002-8922</p>
+        </div>
+        <div>
+            <h1>SOBRE NÓS</h1>
+            <p>sites apresentado cada um</p>
+        </div>
+    </footer>
+</body>
+
+</html>

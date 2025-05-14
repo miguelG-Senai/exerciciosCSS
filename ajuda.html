@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reelbox - Ajuda</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+        }
+
+        header {
+            background-color: #0b2d62;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header h1 span {
+            color: #2cace2;
+        }
+
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #2cace2;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            justify-items: center;
+            max-width: 1000px;
+            margin: 0 auto 60px;
+        }
+
+        .card {
+            background-color: #ccc;
+            width: 250px;
+            height: 150px;
+            border-radius: 6px;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .circle {
+            width: 60px;
+            height: 60px;
+            background-color: #0b2d62;
+            border-radius: 50%;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            overflow: hidden;
+        }
+
+        .circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #0b2d62;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            color: white;
+            font-size: 14px;
+        }
+
+        footer div {
+            max-width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Reel<span>box</span></h1>
+    </header>
+
+    <div class="content">
+        <h2>AJUDA</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="circle">
+                    <img src="imagem1.jpg" alt="Imagem 1">
+                </div>
+                <p>Texto da caixa 1</p>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <img src="imagem2.jpg" alt="Imagem 2">
+                </div>
+                <p>Texto da caixa 2</p>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <img src="imagem3.jpg" alt="Imagem 3">
+                </div>
+                <p>Texto da caixa 3</p>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <img src="imagem4.jpg" alt="Imagem 4">
+                </div>
+                <p>Texto da caixa 4</p>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <img src="imagem5.jpg" alt="Imagem 5">
+                </div>
+                <p>Texto da caixa 5</p>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <img src="imagem6.jpg" alt="Imagem 6">
+                </div>
+                <p>Texto da caixa 6</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <strong>CONTATO</strong><br>
+            reelbox_corporation@gmail.com<br>
+            4002-8922
+        </div>
+        <div>
+            <strong>SOBRE NÓS</strong><br>
+            sites apresentado cada um
+        </div>
+    </footer>
+</body>
+
+</html>
