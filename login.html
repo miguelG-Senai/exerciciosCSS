@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reelbox - Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #00a0e0;
+        }
+
+        header {
+            background-color: #062860;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header .logo .circle {
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        header .logo span:last-child {
+            color: #00a0e0;
+        }
+
+        main {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            color: #00a0e0;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            background: #ccc;
+            font-size: 16px;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-login {
+            background-color: #0077b6;
+            color: white;
+        }
+
+        .btn-register {
+            background-color: #ccc;
+            color: black;
+        }
+
+        footer {
+            background-color: #0096c7;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 30px 20px;
+            font-size: 14px;
+        }
+
+        footer div {
+            max-width: 200px;
+        }
+
+        footer h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .color {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="circle"></div>
+            <span class="color">Reel</span><span>box</span>
+        </div>
+    </header>
+
+    <main>
+        <h1>LOGIN</h1>
+        <form>
+            <label for="email">E-MAIL</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">SENHA</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <div class="button-row">
+                <button type="submit" class="btn-login">ENTRAR</button>
+                <button type="button" class="btn-register">CADASTRAR-SE</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <h1>CONTATO</h1>
+            <p>reelbox_conporation@gmail.com</p>
+            <p>4002-8922</p>
+        </div>
+        <div>
+            <h1>SOBRE NÓS</h1>
+            <p>sites apresentado cada um</p>
+        </div>
+    </footer>
+</body>
+
+</html>
