@@ -14,20 +14,29 @@
         }
 
         header {
-            background-color: #0b2d62;
-            color: white;
+            background-color: #062860;
             padding: 15px 30px;
             display: flex;
             align-items: center;
         }
 
-        header h1 {
-            margin: 0;
+        header .logo {
+            display: flex;
+            align-items: center;
             font-size: 24px;
+            font-weight: bold;
         }
 
-        header h1 span {
-            color: #2cace2;
+        header .logo .circle {
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        header .logo span:last-child {
+            color: #00a0e0;
         }
 
         .content {
@@ -82,23 +91,37 @@
         }
 
         footer {
-            background-color: #0b2d62;
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 40px;
+            background-color: #0096c7;
             color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 30px 20px;
             font-size: 14px;
         }
 
         footer div {
-            max-width: 300px;
+            max-width: 200px;
+        }
+
+        footer h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .color1{
+            color: black;
+        }
+        .color2{
+            color: rgb(255, 255, 255);
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Reel<span>box</span></h1>
+        <div class="logo">
+            <div class="circle"></div>
+            <span class="color2">Reel</span><span>box</span>
+        </div>
     </header>
 
     <div class="content">
@@ -106,52 +129,64 @@
         <div class="grid">
             <div class="card">
                 <div class="circle">
-                    <img src="imagem1.jpg" alt="Imagem 1">
+                    <img src="img/homem1.jfif" alt="Imagem 1">
                 </div>
-                <p>Texto da caixa 1</p>
+                <br>
+                <br>
+                <p class="color1">José - Responsável pelas questões de entrega.</p>
             </div>
             <div class="card">
                 <div class="circle">
-                    <img src="imagem2.jpg" alt="Imagem 2">
+                    <img src="img/mulher1.jfif" alt="Imagem 2">
                 </div>
-                <p>Texto da caixa 2</p>
+                <br>
+                <br>
+                <p class="color1">Juliana - Responsável pela qualidade dos produtos nas caixas.</p>
             </div>
             <div class="card">
                 <div class="circle">
-                    <img src="imagem3.jpg" alt="Imagem 3">
+                    <img src="img/mulher2.jfif" alt="Imagem 3">
                 </div>
-                <p>Texto da caixa 3</p>
+                <br>
+                <br>
+                <p class="color1">Lúcia - Responsável pelas questões de pagamento.</p>
             </div>
             <div class="card">
                 <div class="circle">
-                    <img src="imagem4.jpg" alt="Imagem 4">
+                    <img src="img/homem2.jfif" alt="Imagem 4">
                 </div>
-                <p>Texto da caixa 4</p>
+                <br>
+                <br>
+                <p class="color1">Renan - Atendente de perguntas gerais.</p>
             </div>
             <div class="card">
                 <div class="circle">
-                    <img src="imagem5.jpg" alt="Imagem 5">
+                    <img src="img/mulher3.jfif" alt="Imagem 5">
                 </div>
-                <p>Texto da caixa 5</p>
+                <br>
+                <br>
+                <p class="color1">Paula - Atendente de perguntas gerais.</p>
             </div>
             <div class="card">
                 <div class="circle">
-                    <img src="imagem6.jpg" alt="Imagem 6">
+                    <img src="img/homem3.jfif" alt="Imagem 6">
                 </div>
-                <p>Texto da caixa 6</p>
+                <br>
+                <br>
+                <p class="color1">Lucas - Atendente de perguntas gerais.</p>
             </div>
         </div>
     </div>
 
-    <footer>
+        <footer>
         <div>
-            <strong>CONTATO</strong><br>
-            reelbox_corporation@gmail.com<br>
-            4002-8922
+            <h1>CONTATO</h1>
+            <p>reelbox_conporation@gmail.com</p>
+            <p>4002-8922</p>
         </div>
         <div>
-            <strong>SOBRE NÓS</strong><br>
-            sites apresentado cada um
+            <h1>SOBRE NÓS</h1>
+            <p>sites apresentado cada um</p>
         </div>
     </footer>
 </body>
