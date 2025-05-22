@@ -3,142 +3,263 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Esporte SESI</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
     }
 
-    header {
-      background-color: #331313;
-      color: white;
-      padding: 10px 0;
-      text-align: center;
-    }
-
-    nav {
+    .top-bar {
+      width: 100%;
+      background-color: #000;
       display: flex;
-      justify-content: center;
-      gap: 30px;
-      background-color: black;
-      padding: 10px 0;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
     }
 
-    nav a {
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
       color: white;
       text-decoration: none;
       font-weight: bold;
+      font-size: 14px;
+      transition: color 0.3s;
     }
 
-    .top-banner {
+    .menu a:hover {
+      color: #ff0000;
+    }
+
+    .social {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social img {
+      width: 20px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .logo-imagens {
+      background-color: #7c1a1a;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #331313;
-      padding: 20px 0;
-    }
-
-    .top-banner img {
-      width: 120px;
-      margin: 0 15px;
-    }
-
-    .logo {
-      width: 150px;
-    }
-
-    .section {
-      display: flex;
-      justify-content: space-around;
       padding: 20px;
-      background-color: white;
+      gap: 20px;
     }
 
-    .noticias, .coluna {
-      width: 45%;
+    .logo-imagens .logo {
+      width: 400px;
     }
 
-    .noticias img, .coluna img {
-      max-width: 100%;
+    .logo-imagens .imagens-laterais {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
 
-    .noticias h2, .coluna h2 {
-      font-size: 24px;
+    .logo-imagens .imagens-laterais img {
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .logo-imagens .imagens-laterais img:hover {
+      transform: scale(1.05);
+    }
+
+    .principal {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .noticias {
+      width: 65%;
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+
+    .noticias h2 {
+      font-size: 20px;
       margin-bottom: 10px;
+    }
+
+    .noticias img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      transition: transform 0.3s;
+    }
+
+    .noticias img:hover {
+      transform: scale(1.02);
+    }
+
+    .noticias p {
+      font-size: 12px;
+      text-align: justify;
+    }
+
+    .coluna {
+      width: 32%;
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+
+    .coluna h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .coluna img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      transition: transform 0.3s;
+    }
+
+    .coluna img:hover {
+      transform: scale(1.05);
+    }
+
+    .coluna p {
+      font-size: 12px;
+      text-align: justify;
     }
 
     .categorias {
       display: flex;
-      justify-content: space-around;
-      padding: 20px;
-      background-color: #eaeaea;
+      justify-content: space-between;
+      padding: 0 20px 20px 20px;
     }
 
     .categoria {
+      width: 23%;
+      background-color: #f4f4f4;
+      padding: 10px;
       text-align: center;
-      width: 20%;
+      transition: transform 0.3s;
+    }
+
+    .categoria:hover {
+      transform: scale(1.05);
+    }
+
+    .categoria h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
     }
 
     .categoria img {
       width: 100%;
-      border-radius: 8px;
-    }
-
-    .categoria h3 {
-      margin-top: 10px;
+      height: 120px;
+      object-fit: cover;
     }
   </style>
 </head>
 
 <body>
-  <nav>
-    <a href="#">HOME</a>
-    <a href="#">LAZER</a>
-    <a href="#">ESPORTES</a>
-    <a href="#">CORRIDAS</a>
-    <a href="#">E-SPORTS</a>
-  </nav>
 
-  <div class="top-banner">
-    <img src="https://via.placeholder.com/120x160" alt="Imagem 1">
-    <img class="logo" src="https://via.placeholder.com/150x160?text=Esporte+SESI" alt="Logo Esporte SESI">
-    <img src="https://via.placeholder.com/120x160" alt="Imagem 2">
+  <div class="top-bar">
+    <div class="menu">
+      <a href="#">HOME</a>
+      <a href="#">LAZER</a>
+      <a href="#">ESPORTES</a>
+      <a href="#">CORRIDAS</a>
+      <a href="#">E-SPORTS</a>
+    </div>
+    <div class="social">
+      <img src="img/whats_logo_01.png" alt="WhatsApp">
+      <img src="img/inst_logo_01.png" alt="Instagram">
+      <img src="img/face_logo_02.png" alt="Facebook">
+    </div>
   </div>
 
-  <div class="section">
+  <div class="logo-imagens">
+    <div class="imagens-laterais">
+      <img src="img/sesifutebol.jpg" alt="">
+      <img src="img/sesifemininofutebol.jpg" alt="">
+    </div>
+    <img src="img/sesilogo.png" alt="Logo Esporte SESI" class="logo">
+    <div class="imagens-laterais">
+      <img src="img/sesifemininovolei.jpg" alt="">
+      <img src="img/sesivolei.webp" alt="">
+    </div>
+  </div>
+
+  <div class="principal">
     <div class="noticias">
       <h2>Notícias</h2>
-      <img src="https://via.placeholder.com/600x300?text=SESI+em+Movimento" alt="SESI em Movimento">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores commodi quis laboriosam, nam aspernatur dicta maxime...</p>
+      <img src="img/sesiemmovimento.png" alt="SESI em Movimento">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at libero vel erat pulvinar luctus. Proin
+        porttitor nulla ac odio gravida, sed tempus enim blandit Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Obcaecati nostrum quia aut eligendi nobis enim consequuntur esse accusantium odit explicabo labore dolore
+        ex beatae, inventore assumenda, mollitia incidunt molestias reiciendis? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Vel sint dolorum modi vitae amet, iure ullam error deleniti! Ad numquam doloribus officia modi
+        veritatis, natus odit inventore quod voluptatem repellat? Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Placeat obcaecati, iure accusamus debitis impedit harum molestias, modi natus assumenda, quas vel error
+        autem iusto architecto exercitationem quis! Non, dolore exercitationem!</p>
     </div>
+
     <div class="coluna">
       <h2>Coluna</h2>
-      <img src="https://via.placeholder.com/200x250" alt="Colunista">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores commodi quis laboriosam, nam aspernatur dicta maxime...</p>
+      <img src="img/scorcese.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt, nisl vel placerat sodales, nunc
+        sapien congue elit, in dignissim nulla erat non nulla. Sed sed libero nec nisl elementum fermentum. Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt, nisl vel placerat sodales, nunc
+        sapien congue elit, in dignissim nulla erat non nulla. Sed sed libero nec nisl elementum fermentum.Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt, nisl vel placerat sodales, nunc
+        sapien congue elit, in dignissim nulla erat non nulla. Sed sed libero nec nisl elementum fermentum.Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt, nisl vel placerat sodales, nunc
+        sapien congue elit, in dignissim nulla erat non nulla. Sed sed libero nec nisl elementum fermentum.Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt, nisl vel placerat sodales, nunc
+        sapien congue elit, in dignissim nulla erat non nulla. Sed sed libero nec nisl elementum fermentum.Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt, nisl vel placerat sodales, nunc
+
+      </p>
     </div>
   </div>
-
+  <hr>
+  <br>
   <div class="categorias">
     <div class="categoria">
-      <img src="https://via.placeholder.com/200x150?text=Basquete" alt="Basquete">
       <h3>Basquete</h3>
+      <img src="img/sesibasquete.jfif" alt="">
     </div>
     <div class="categoria">
-      <img src="https://via.placeholder.com/200x150?text=Volei" alt="Volei">
-      <h3>Volei</h3>
+      <h3>Vôlei</h3>
+      <img src="img/sesivolei2.avif" alt="">
     </div>
     <div class="categoria">
-      <img src="https://via.placeholder.com/200x150?text=Judo" alt="Judo">
-      <h3>Judo</h3>
+      <h3>Judô</h3>
+      <img src="img/sesijudo.jpg" alt="">
     </div>
     <div class="categoria">
-      <img src="https://via.placeholder.com/200x150?text=Futebol" alt="Futebol">
       <h3>Futebol</h3>
+      <img src="img/sesifutebol2.png" alt="">
     </div>
   </div>
+  <hr>
+
+
 </body>
 
 </html>
